@@ -20,8 +20,10 @@ class ItemTest {
     }
 
     @Test
-    void item_shouldInitializeWithValue() {
-        item = new Item(0, 10);
+    void item_shouldInitializeWithValueAndIdAndName() {
+        item = new Item("Item", 0, 10);
+        assertEquals("Item", item.getName());
+        assertEquals(0, item.getId());
         assertEquals(10, item.getValue());
     }
 }

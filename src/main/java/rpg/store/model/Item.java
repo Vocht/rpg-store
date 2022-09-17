@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Getter
 public class Item {
-    private int id;
-    private int value;
+    protected String name;
+    protected int id;
+    protected int value;
 }

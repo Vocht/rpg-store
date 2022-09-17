@@ -3,8 +3,6 @@ package rpg.store.model;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import rpg.store.exceptions.NotFoundException;
-import rpg.store.model.Inventory;
-import rpg.store.model.Item;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -38,7 +36,7 @@ class InventoryTest {
 
     @Test
     void inventory_removeItem_givenItemId_expectingItemToBeRemoved() throws NotFoundException {
-        inventory.addItem(new Item(0, 0));
+        inventory.addItem(new Item("Item", 0, 0));
         assertEquals(1, inventory.getItems().size());
         inventory.removeItem(0);
         assertEquals(0, inventory.getItems().size());
