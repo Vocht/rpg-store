@@ -5,18 +5,18 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class InventoryTest {
+class FundsTest {
 
-    Inventory inventory;
+    private Funds funds;
 
     @BeforeEach
     void setUp() {
-        inventory = new Inventory();
+        funds = new Funds();
     }
 
     @Test
-    void inventory_shouldHaveFunds() {
-        var funds = inventory.getFunds();
-        assertNotNull(funds);
+    void funds_shouldHaveTotalValue() {
+        var totalValue = funds.getTotalValue();
+        assertEquals(0, totalValue);
     }
 }
