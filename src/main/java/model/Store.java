@@ -1,6 +1,8 @@
 package model;
 
-public class Store {
+import interfaces.InventoryContainer;
+
+public class Store implements InventoryContainer {
     public Inventory getInventory() {
         return new Inventory();
     }
