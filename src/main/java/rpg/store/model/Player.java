@@ -1,6 +1,6 @@
-package model;
+package rpg.store.model;
 
-import interfaces.InventoryContainer;
+import rpg.store.interfaces.InventoryContainer;
 
 public class Player implements InventoryContainer {
     public Inventory getInventory() {

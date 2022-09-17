@@ -1,4 +1,4 @@
-package model;
+package rpg.store.model;
 
 public class Funds {
     public int getTotalValue() {

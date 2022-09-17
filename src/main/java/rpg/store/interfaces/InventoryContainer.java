@@ -1,6 +1,6 @@
-package interfaces;
+package rpg.store.interfaces;
 
-import model.Inventory;
+import rpg.store.model.Inventory;
 
 public interface InventoryContainer {
     Inventory getInventory();

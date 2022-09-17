@@ -1,7 +1,8 @@
-package model;
+package rpg.store.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import rpg.store.model.Store;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
