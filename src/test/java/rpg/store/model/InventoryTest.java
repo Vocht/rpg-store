@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class InventoryTest {
 
-    Inventory inventory;
+    private Inventory inventory;
 
     @BeforeEach
     void setUp() {
@@ -30,13 +30,13 @@ class InventoryTest {
     @Test
     void inventory_addItem_givenItem_expectingItemsToContainItem() {
         assertEquals(0, inventory.getItems().size());
-        inventory.addItem(new Item());
+        inventory.addItem(new Potion());
         assertEquals(1, inventory.getItems().size());
     }
 
     @Test
     void inventory_removeItem_givenItemId_expectingItemToBeRemoved() throws NotFoundException {
-        inventory.addItem(new Item("Item", 0, 0));
+        inventory.addItem(new Potion());
         assertEquals(1, inventory.getItems().size());
         inventory.removeItem(0);
         assertEquals(0, inventory.getItems().size());

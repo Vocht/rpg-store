@@ -24,7 +24,7 @@ class StoreTest {
 
     @Test
     void store_sellItem_givenAnItemId_expectingItemToBeRemovedAndFundsToBeIncreased() throws NotFoundException {
-        store.getInventory().addItem(new Item("Item", 0, 10));
+        store.getInventory().addItem(new Potion());
 
         assertEquals(1, store.getInventory().getItems().size());
         assertEquals(0, store.getInventory().getFunds().getTotalValue());
@@ -32,6 +32,6 @@ class StoreTest {
         store.sellItem(0);
 
         assertEquals(0, store.getInventory().getItems().size());
-        assertEquals(10, store.getInventory().getFunds().getTotalValue());
+        assertEquals(5, store.getInventory().getFunds().getTotalValue());
     }
 }

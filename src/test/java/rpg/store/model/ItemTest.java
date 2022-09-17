@@ -11,19 +11,18 @@ class ItemTest {
 
     @BeforeEach
     void setUp() {
-        item = new Item();
+        item = new Potion();
     }
 
     @Test
     void item_shouldHaveDefaultValue() {
-        assertEquals(0, item.getValue());
+        assertEquals(5, item.getValue());
     }
 
     @Test
     void item_shouldInitializeWithValueAndIdAndName() {
-        item = new Item("Item", 0, 10);
-        assertEquals("Item", item.getName());
+        assertEquals("Potion", item.getName());
         assertEquals(0, item.getId());
-        assertEquals(10, item.getValue());
+        assertEquals(5, item.getValue());
     }
 }
